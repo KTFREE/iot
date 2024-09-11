@@ -1,0 +1,7 @@
+from time import sleep
+import tm1637
+Display = tm1637.TM1637(CLK=21, DIO=20, brightness=1.0)
+	print "Starting clock in the background (press CTRL + C to stop):"
+	Display.StartClock()
+	sleep(5)
+	Display.StopClock()

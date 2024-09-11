@@ -1,0 +1,15 @@
+#include <LiquidCrystal_I2C.h>
+LiquidCrystal_I2C lcd(0x27,20,4); 
+void setup()
+{
+lcd.init();
+
+lcd.backlight();
+lcd.setCursor(3,0);
+lcd.print("Roll:000");
+lcd.setCursor(2,1);
+lcd.print("Name: MY_NAME ");
+}
+void loop()
+{
+}
